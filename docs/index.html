@@ -1,23 +1,25 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html>
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题 1</title>
+    <meta charset="utf-8">
+	<title>Live2D！把可爱的看板娘扑捉到你的博客去吧！</title>
+    <link rel="stylesheet" href="/live2d/css/live2d.css" />
 </head>
-
 <body>
-
-<hr />
-
-<canvas id="live2d" width="280" height="250"></canvas>
-<script src="./live2d/js/live2d.js"></script>
+<div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="hide-button">隐藏</div>
+</div>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript">
-    loadlive2d("live2d", "./live2d/model/miku/runtime/miku.model3.json");
+    var message_Path = '/live2d/'
+    var home_Path = 'https://haremu.com/'
 </script>
-
-
+<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "/live2d/model/tia/model.json");
+</script>
 </body>
-
 </html>
