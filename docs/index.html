@@ -30,7 +30,16 @@
 <script type="text/javascript" src="./live2d/js/live2d.js"></script>
 <script type="text/javascript" src="./live2d/js/message.js"></script>
 <script type="text/javascript">
+    var modelnumber = Math.floor(Math.random()*2);
+    if (modelnumber = 0){
     loadlive2d("live2d", "./live2d/model/rem/rem.json");
+    }
+    if (modelnumber = 1){
+    loadlive2d("live2d", "./live2d/model/miku/runtime/miku.model3.json");
+    }
+    if (modelnumber = 2){
+    loadlive2d("live2d", "./live2d/model/sizuku/runtime/sizuku.model3.json");
+    }
 </script>
 <p class="style2">UnderwaterFTP</p>
 <p class="style2">
